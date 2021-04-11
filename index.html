@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="assets/image/logo.ico" />
+    <link rel="stylesheet" type="text/css"  href="assets/css/index.css">
+    <link rel="stylesheet" type="text/css"  href="assets/js/slider.js">
+
+    <title>GP Motos | Vendas é Compras de Motos Usadas é Novas..</title>
+
+</head>
+<body>
+
+    <header>
+            <div class="container">
+                <div class="logo">
+                        <a href="index.html"><img src="assets/image/logo-dark.png" ></a>
+                </div>
+
+                <div class="menu">
+                    <nav >
+                            <ul>
+                                <li class="active"><a href="index.html">HOME</a></li>
+                                <li><a href="index.html">QUEM SOMOS</a></li>
+                                <li><a href="index.html">VENDER</a></li>
+                                <li><a href="compras.html">COMPRAR</a></li>
+                            </ul>                            
+                    </nav>
+                     <!-- Principal área de pesquisa -->
+                        <div class="top-search-area">
+                          <input class="search" type="text" name="pesquisatop" value="Pesquisar"> <!--Barra de pesquisa-->
+                            <button class="botao" name="button">Enviar</b button> <!-- Botão de pesquisa-->
+
+            </div>                
+                </div>
+            </div>            
+    </header>
+
+    <!---Carrousel-->
+
+        <div class="slide">
+            <img src="assets/image/placehold.it-1920x620-1-600x194.jpg" />
+         </div>
+     <!--<div class="slide">
+            <img src="" />
+         </div>
+         <div class="slide">
+            <img src="" />
+         </div>
+         <div class="slide">
+            <img src="" />
+         </div>
+         <div class="slide">
+            <img src="" /> --->
+         </div>
+
+         <a class="prevbtn" onclick="changeSlide(-1)"> ❮ </a>
+         <a class="nextbtn" onclick="changeSlide(1)"> ❯  </a>
+
+      </div>
+
+      <script>
+                let slideIndex = [1,1];
+                viewSlides(1);
+                function changeSlide(n) {
+                    viewSlides(slideIndex[0] += n);
+                }
+                function viewSlides(n) {
+                    let ele = document.getElementsByClassName("slide");
+                    if (n > ele.length) {
+                    slideIndex[0] = 1
+                    }
+                    if (n < 1) {
+                    slideIndex[0] = ele.length
+                    }
+                    for (i = 0; i < ele.length; i++) {
+                    ele[i].style.display = "none";
+                    }
+                    ele[slideIndex[0]-1].style.display = "block";
+         }
+      </script>
+       <header class="box">                    
+                    <div>
+                        <a href="compras.html">COMPRAS</a> 
+                    </div>
+                    <div>
+                        <a href="">VENDAS</a>
+                     </div>
+                    <div>
+                        <a href="">TROCAS</a> 
+                    </div>
+                    <div>
+                        <a href="">FINANÇAS</a> 
+                    </div>
+
+            </header>
+
+        <section class="container-marcas">
+            <h2 >CONHEÇA AS MARCAS MAIS VENDIDAS!</h2>
+        </section>
+
+    <footer >
+        <a>Copyright © 2021 - Todos os Direitos Reservados.</a>
+       <a>Av. Vicente José Parise , nº 660, centro, Taquaritinga - SP - Tel (16) 99 326 - 7279  Cel: 99 326 - 7279</a> 
+    </footer>
+</body>
+</html>
