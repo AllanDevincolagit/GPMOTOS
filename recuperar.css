@@ -1,0 +1,17 @@
+header, img, .cadeado{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-content:center;
+}
+
+button{
+    background-color:black;
+   
+    cursor:pointer;
+    
+}
+
+button:hover{
+    border:1px solid darkred;
+}
